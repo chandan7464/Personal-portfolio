@@ -1,0 +1,72 @@
+import React from 'react';
+import { Card, CardContent } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
+
+const Portfolio = () => {
+  return (
+    <div className="min-h-screen bg-gray-100 p-4">
+      <header className="text-center p-4">
+        <h1 className="text-4xl font-bold">Chandan Kumar</h1>
+        <p className="text-lg mt-2">Aspiring Software Engineer | Machine Learning Enthusiast</p>
+        <h2 className="text-xl font-medium">Manav Rachna University, Faridabad</h2>
+        <p className="text-md mt-1">B.Tech in Computer Science (2021-2025)</p>
+        <a href="https://github.com/chandan7464" target="_blank" className="text-blue-600 hover:underline">GitHub</a> | 
+        <a href="https://www.linkedin.com/in/chandan-kumar-59a309221/" target="_blank" className="text-blue-600 hover:underline">LinkedIn</a>
+      </header>
+
+      <section className="mt-8">
+        <h2 className="text-3xl font-semibold text-center">About Me</h2>
+        <p className="text-center mt-4">I am a final year Computer Science student passionate about leveraging AI and Machine Learning to solve real-world problems. I specialize in full-stack development and scalable machine learning solutions, with hands-on experience in deploying applications on cloud platforms.</p>
+      </section>
+
+      <section className="mt-8">
+        <h2 className="text-3xl font-semibold text-center">Skills Overview</h2>
+        <ul className="list-disc list-inside text-center mt-4">
+          <li>Programming Languages: Python, C++, JavaScript, HTML, CSS</li>
+          <li>Frameworks: TensorFlow, Django, Flask, React, Node.js</li>
+          <li>Cloud Platforms: AWS (Basic)</li>
+          <li>Databases: MySQL</li>
+          <li>Tools: Git, GitHub, Power BI, Excel</li>
+        </ul>
+      </section>
+
+      <section className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <h2 className="text-3xl font-semibold text-center w-full">Projects</h2>
+        <Card className="shadow-lg">
+          <CardContent>
+            <h2 className="text-2xl font-semibold">Prodigy-ML-02</h2>
+            <p className="mt-2">Ongoing project focused on machine learning innovations and applications.</p>
+            <a href="https://github.com/chandan7464/Prodigy-Ml-02" target="_blank"><Button className="mt-4">View on GitHub</Button></a>
+          </CardContent>
+        </Card>
+        <Card className="shadow-lg">
+          <CardContent>
+            <h2 className="text-2xl font-semibold">Medicor</h2>
+            <p className="mt-2">Healthcare platform for medical consultations using ML algorithms.</p>
+            <a href="https://github.com/chandan7464/Medicor" target="_blank"><Button className="mt-4">View on GitHub</Button></a>
+          </CardContent>
+        </Card>
+      </section>
+
+      <section className="mt-8">
+        <h2 className="text-3xl font-semibold text-center">Certifications</h2>
+        <ul className="list-disc list-inside text-center mt-4">
+          <li>LinkedIn Certified - Machine Learning (2024)</li>
+          <li>Udemy Certified - Python Language (2024)</li>
+        </ul>
+      </section>
+
+      <section className="mt-8 text-center">
+        <h2 className="text-3xl font-semibold">Contact Me</h2>
+        <p className="mt-4">Feel free to reach out for collaboration or job opportunities:</p>
+        <p>Email: <a href="mailto:chandank1822002@gmail.com" className="text-blue-600 hover:underline">chandank1822002@gmail.com</a></p>
+      </section>
+
+      <footer className="text-center mt-8">
+        <p>&copy; 2025 Chandan Kumar</p>
+      </footer>
+    </div>
+  );
+};
+
+export default Portfolio;
